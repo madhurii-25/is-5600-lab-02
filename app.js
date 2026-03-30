@@ -56,8 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// ================= FUNCTIONS =================
-
 function generateUserList(users, stocks) {
   const userList = document.querySelector('.user-list');
   userList.innerHTML = '';
