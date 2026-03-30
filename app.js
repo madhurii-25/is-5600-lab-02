@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       generateUserList(userData, stocksData);
 
-      // ✅ FIX: clear UI properly
+    
       document.querySelector('.portfolio-list').innerHTML = '';
       document.querySelector('#stockName').textContent = '';
       document.querySelector('#stockSector').textContent = '';
@@ -44,10 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
       userData[i].user.city = document.querySelector('#city').value;
       userData[i].user.email = document.querySelector('#email').value;
 
-      // 🔥 IMPORTANT FIX
+     
       generateUserList(userData, stocksData);
 
-      // 👉 re-select the same user so portfolio shows again
+      
       populateForm(userData[i]);
       renderPortfolio(userData[i], stocksData);
     }
